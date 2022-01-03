@@ -31,6 +31,7 @@ public class ItemService {
     /**
      * 영속성 컨텍스트가 자동 변경
      */
+    @Transactional
     public void updateItem(Long id, String name, int price) {
 
         Item item = itemRepository.findOne(id);
